@@ -1,0 +1,23 @@
+{
+  "name": "typescript-starter",
+  "version": "1.0.0",
+  "description": "This is a Typescript bundle starter.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "start": "npx nodemon main.js",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "version": "node version-bump.mjs && git add manifest.json versions.json"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "builtin-modules": "^3.3.0",
+    "esbuild": "^0.17.17",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.0.4"
+  }
+}
